@@ -34,7 +34,7 @@ def index():
     return render_template('index.html', notes=notes)
 
 # Save note
-@app.route('/add', methods=['POST'])
+@app.route('/add', methods=['PULL'])
 def add_note():
     note = request.form['note']
 
